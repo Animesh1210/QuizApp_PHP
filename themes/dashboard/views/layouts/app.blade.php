@@ -50,9 +50,9 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="{{ url('admin/dashboard')}}" class="nav-link">Home</a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      <!-- <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
-      </li>
+      </li> -->
     </ul>
 
     <!-- Right navbar links -->
@@ -181,7 +181,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="{{ url('admin/dashboard')}}" class="brand-link">
       <span class="brand-text font-weight-light">Online Examination</span>
     </a>
 
@@ -326,7 +326,8 @@
 <!-- daterangepicker -->
 <script src="{{ url('assets/plugins/moment/moment.min.js')}}"></script>
 <script src="{{ url('assets/plugins/daterangepicker/daterangepicker.js')}}"></script>
-<!-- Tempusdominus Bootstrap 4 -->
+<!-- Tempusdominus Bootstrap-->
+<!-- bootstrap's cdn -->
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 <script src="{{ url('assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
