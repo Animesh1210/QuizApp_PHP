@@ -224,13 +224,13 @@
           <li class="nav-item">
             <a href="{{ url('admin/manage_students')}}" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Students</p>
+                <p>Student's Exam</p>
             </a>
         </li>
         <li class="nav-item">
           <a href="{{ url('admin/registered_students')}}" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
-              <p>Registered students</p>
+              <p>Registered Users</p>
           </a>
       </li>
         <li class="nav-item">

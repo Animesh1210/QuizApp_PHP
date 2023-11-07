@@ -24,9 +24,9 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
     return view('home');
-})->middleware(['auth'])->name('home');
+})->middleware(['auth'])->name('home');  //check if user authenticated, if not redirects to home login
 
-
+//Admin Route, Parent admin auth, followed by sub admin child routes.
 Route::prefix('admin')->middleware('theme:dashboard')->name('admin.')->group(function(){
    
         
@@ -53,7 +53,6 @@ Route::prefix('admin')->middleware('theme:dashboard')->name('admin.')->group(fun
             Route::get('/delete_registered_students/{id}',[AdminController::class,'delete_registered_students']);
             Route::get('/apply_exam/{id}',[AdminController::class,'apply_exam']);
             Route::get('/admin_view_result/{id}',[AdminController::class,'admin_view_result']);
-    
             Route::post('/edit_question_inner',[AdminController::class,'edit_question_inner']);
             Route::post('/add_new_question',[AdminController::class,'add_new_question']);
             Route::post('/edit_students_final',[AdminController::class,'edit_students_final']);
@@ -71,7 +70,7 @@ Route::prefix('admin')->middleware('theme:dashboard')->name('admin.')->group(fun
 
 
 
-/* Student section routes */
+//Student side Routes, Parent student route authentication to be resolved, then we can access child routes
 Route::prefix('student')->middleware('theme:dashboard')->name('student.')->group(function(){
     
 

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Quiz App</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@
             <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
             <div class="container">
               <div class="navbar-brand-wrapper d-flex w-100">
-                <img src="{{ url('assets/images/Group2.svg')}}" alt="">
+                <!-- <img src="{{ url('assets/images/Group2.svg')}}" alt=""> -->
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="mdi mdi-menu navbar-toggler-icon"></span>
                 </button> 
@@ -54,7 +54,7 @@
                 <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
                   <li class="d-flex align-items-center justify-content-between pl-4 pl-lg-0">
                     <div class="navbar-collapse-logo">
-                      <img src="{{ url('assets/images/Group2.svg')}}" alt="">
+                      <!-- <img src="{{ url('assets/images/Group2.svg')}}" alt=""> -->
                     </div>
                     <button class="navbar-toggler close-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
@@ -70,8 +70,8 @@
           </header>
           <div class="banner" >
             <div class="container">
-              <h1 class="font-weight-semibold">Welcome to online quiz application</h1>
-              <h6 class="font-weight-normal text-muted pb-3">Create and take students assesment tests in very reliable and fast way</h6>
+              <h1 class="font-weight-semibold">Online quiz application</h1>
+              <h6 class="font-weight-normal text-muted pb-3">Create and take quiz in a very reliable and fast way</h6>
               <div>
                       <a href="{{ url('/login') }}" class="btn btn-opacity-light mr-1"><b>Student Login</b></a>
                       <a href="{{ route('register') }}"class="btn btn-opacity-success ml-1"><b>Student Register</b></a>
